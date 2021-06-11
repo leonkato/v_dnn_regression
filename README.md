@@ -53,7 +53,7 @@ past work with time series techniques and understand how they could be applied.
 I believe that the outlier, missing data and time-base issues are severely degrading model performance. 
 These would need to be addressed for any usable model.
 
-# Model tuning
+* Model tuning
 
 Model tuning (hyper-parameter optimization) can have a significant impact on performance. Based on my 
 examination of the graphical output comparing predicted and actual values, I recommend applying time-series techniques, followed by tuning.
