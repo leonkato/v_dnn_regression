@@ -1,0 +1,75 @@
+(base) saus@megux:~/Documents/finx/vishy/v_deliver$ exit
+exit
+Script done, file is trace_of_v_script.txt
+(base) saus@megux:~/Documents/finx/vishy/v_deliver$ ipython v_script.py
+tensor flow version is 2.4.1
+2021-06-11 16:13:47.344009: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+gpus ==> []
+Loading validation data: data905/validation905.xlsx
+Validation data read..
+Beginning DO...
+Reloading model: models905/do_dnn_model...
+2021-06-11 16:13:48.721859: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-11 16:13:48.722547: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Done
+
+Predicting DO...
+2021-06-11 16:13:48.883877: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2021-06-11 16:13:48.902066: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 3600000000 Hz
+Done
+Checking DO metrics...
+r2 score:  -2.0506879304507106
+mean abs. error:  1.8951665499066346
+Showing plot actual vs. predicted
+saving predictions in dnn_predicted_do.csv...
+Done.
+
+Target DO done.
+
+Beginning no3...
+Reloading model: models905/no3_dnn_model...
+Done
+
+Predicting no3...
+Done
+Checking NO3 metrics...
+r2 score:  0.2299412731058017
+mean abs. error:  1.5877664106575664
+Showing plot actual vs. predicted
+saving predictions in dnn_predicted_no3.csv...
+Done.
+
+Target NO3 done.
+
+Beginning nh4...
+Reloading model: models905/nh4_dnn_model...
+Done
+
+Predicting nh4...
+Done
+Checking NH4 metrics...
+r2 score:  -0.8804206514624808
+mean abs. error:  0.10870872542862123
+Showing plot actual vs. predicted
+saving predictions in dnn_predicted_nh4.csv...
+Done.
+
+Target NH4 done.
+
+Beginning po4...
+Reloading model: models905/po4_dnn_model...
+Done
+
+Predicting po4...
+Done
+Checking PO4 metrics...
+r2 score:  -5.362994612768194
+mean abs. error:  0.10003754462603896
+Showing plot actual vs. predicted
+saving predictions in dnn_predicted_po4.csv...
+Done.
+
+Target PO4 done.
+
+Press enter to dismiss charts.
