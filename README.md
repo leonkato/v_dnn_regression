@@ -20,7 +20,7 @@ model = tf.keras.models.load_model('dir_path')
 * model_builder_NH4.ipynb
 * model_builder_PO4.ipynb
 
-$$$$ The directory  ./val_predictions' contains pre-calculated predictions for each target. The features come from './data905/validation905.xlsx'.  
+#### The directory  ./val_predictions' contains pre-calculated predictions for each target. The features come from './data905/validation905.xlsx'.  
 * dnn_predicted_do.csv
 * dnn_predicted_no3.csv
 * dnn_predicted_nh4.csv
