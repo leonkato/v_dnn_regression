@@ -32,10 +32,10 @@ model = tf.keras.models.load_model('dir_path')
 #### Predictions on validation are not great.
 
 The error and r-squared are much worse than validation during training. There are several possible issues:
-The training data is quite unlike the validation data:
-Many time gaps between observations in the validation data
-Outliers more prevalent in the validation data
-The time base doesn't match between training and validation data (4 obs per 15 min in training data vs. 1 obs per 15 min in the validation data)
+* The training data is quite unlike the validation data:
+* Many time gaps between observations in the validation data
+* Outliers more prevalent in the validation data
+* The time base doesn't match between training and validation data (4 obs per 15 min in training data vs. 1 obs per 15 min in the validation data)
 
 #### What to do about it
 
